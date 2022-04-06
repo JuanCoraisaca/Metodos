@@ -62,12 +62,7 @@ public class Principal {
         }else{
              System.out.println("El auto de placa"+autoLuis.placa+ " NO es un taxi");       
         }
-        
-        
         System.out.println("El auto de precio "+ autoLuis.precio+ " Debe pagar de tasa solidaria "+ autoLuis.calcularTasaSolidaria());
-        
-            
     }
-        
 }
 

@@ -41,10 +41,25 @@ public class Auto {
                         retorno= 370;
                     }
                     }
+            
+        }
+        return retorno;       
+    }
+    public double calcularMatricula(int limitYear, int limitPrecio){
+        var retorno = 10000d;
+        if(this.year>=0 && this.year<=limitYear){
+            if(this.precio>=0 && this.precio<=10000)
+                retorno= this.precio*0.1;
+            else
+                retorno=this.precio *0.2;
+            
+        }else{
+            if(this.precio>=0 &&this.precio<= limitPrecio)
+                retorno=this.precio *0.15;
+            else
+                retorno = this.precio *0.25;
+                
         }
         return retorno;
-    }
-    }
-
-   
-
+    }         
+}
